@@ -1,4 +1,4 @@
-# Project Title
+# pYscan
 Simple Python IP Scanner
 ## Description
 • Scans IP for open ports<br>
