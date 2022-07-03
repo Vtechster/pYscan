@@ -64,7 +64,7 @@ def is_open(ip, port):
 
 
 def main():
-    ip_addr = input("Enter Target IP: " + Fore.WHITE)
+    ip_addr = input("Enter Target IP or hostname(example.com): " + Fore.WHITE)
     print()
     print(
         Fore.MAGENTA + "Which ports to scan?\n\n1. Common Ports\n2. Reserved Ports(1-1023)\n3. All Ports(1-65535)\n4. Custom Range\n")
