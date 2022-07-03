@@ -18,7 +18,7 @@ python3 main.py
 ```
 ## Authors
 Vansh Aggarwal (Vtechster) <br>
-ig:@vtechster<br>
-twitter:@vtechster
+ig: [@vtechster](https://www.instagram.com/vtechster)<br>
+twitter:[@vtechster](https://twitter.com/vtechster)
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
