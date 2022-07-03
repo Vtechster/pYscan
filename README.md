@@ -13,7 +13,7 @@ Simple Python IP Scanner
 git clone https://github.com/Vtechster/pYscan
 cd pYscan
 chmod a+x main.py
-pip3 -r requirements.txt
+pip3 install -r requirements.txt
 python3 main.py
 ```
 ## Authors
