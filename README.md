@@ -17,8 +17,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 ## Authors
-Contributors names and contact info<br>
-Vansh Aggarwal(Vtechster)<br>
+Vansh Aggarwal (Vtechster) <br>
 ig:@vtechster<br>
 twitter:@vtechster
 ## License
