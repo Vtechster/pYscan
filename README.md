@@ -1,5 +1,5 @@
 # pYscan
-Simple Python IP Scanner
+pYscan - Simple Python IP Scanner
 ## Description
 • Scans IP for open ports<br>
 • Returns Banner<br>
