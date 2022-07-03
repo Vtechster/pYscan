@@ -38,8 +38,8 @@ def scan_ip(ip, m):
                 continue
     else:
         if m == 4:
-            start = int(input(Fore.MAGENTA + "Enter starting port range:"))
-            end = int(input(Fore.MAGENTA + "Enter ending port range:")) + 1
+            start = int(input(Fore.MAGENTA + "Enter starting port range: " + Fore.WHITE))
+            end = int(input(Fore.MAGENTA + "Enter ending port range: " + Fore.WHITE)) + 1
             print()
         else:
             start = 1
