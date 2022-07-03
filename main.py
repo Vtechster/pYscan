@@ -71,9 +71,10 @@ def main():
     m = int(input("Enter Option: " + Fore.WHITE))
     print()
     scan_ip(ip_addr, m)
+    print()
 
 
 if __name__ == "__main__":
     main()
-    print(Fore.GREEN + "\nSCAN COMPLETED.\n")
+    print(Fore.MAGENTA + "\nSCAN COMPLETED.\n")
     input(Fore.MAGENTA + "Press Enter to continue...")
