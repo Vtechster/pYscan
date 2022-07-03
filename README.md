@@ -6,7 +6,7 @@ Simple Python IP Scanner
 • 4 port range modes including custom range<br>
 ## Getting Started
 ### Dependencies
-* Linux OS Recommended
+* Linux OS is recommended if any interface issues
 * Colorama
 * Pyfiglet
 ### Installing
