@@ -28,25 +28,31 @@ def get_banner(ip, port):
 def scan_ip(ip, m):
     if m == 1:
         for i in portList:
-            if is_open(ip, i):
-                print(Fore.GREEN + "IP:{}".format(ip), "PORT:{}".format(i), 'is open.', end=" ")
-                print("Banner:", get_banner(ip, i), "({})".format(socket.getservbyport(i, 'tcp')))
-            else:
-                print(Fore.RED + "IP:{}".format(ip), "PORT:{}".format(i), "is closed.")
+            try:
+                if is_open(ip, i):
+                    print(Fore.GREEN + "IP:{}".format(ip), "PORT:{}".format(i), 'is open.', end=" ")
+                    print("Banner:", get_banner(ip, i), "({})".format(socket.getservbyport(i, 'tcp')))
+                else:
+                    print(Fore.RED + "IP:{}".format(ip), "PORT:{}".format(i), "is closed.")
+            except:
+                continue
     else:
         if m == 4:
-            start = int(input(Fore.MAGENTA+"Enter starting port range:"))
-            end = int(input(Fore.MAGENTA+"Enter ending port range:"))+1
+            start = int(input(Fore.MAGENTA + "Enter starting port range:"))
+            end = int(input(Fore.MAGENTA + "Enter ending port range:")) + 1
             print()
         else:
             start = 1
             end = mList[str(m)]
         for i in range(start, end):
-            if is_open(ip, i):
-                print(Fore.GREEN + "IP:{}".format(ip), "PORT:{}".format(i), "is open.", end=" ")
-                print("Banner:", get_banner(ip, i), "({})".format(socket.getservbyport(i, 'tcp')))
-            else:
-                print(Fore.RED + "IP:{}".format(ip), "PORT:{}".format(i), "is closed.")
+            try:
+                if is_open(ip, i):
+                    print(Fore.GREEN + "IP:{}".format(ip), "PORT:{}".format(i), "is open.", end=" ")
+                    print("Banner:", get_banner(ip, i), "({})".format(socket.getservbyport(i, 'tcp')))
+                else:
+                    print(Fore.RED + "IP:{}".format(ip), "PORT:{}".format(i), "is closed.")
+            except:
+                continue
 
 
 def is_open(ip, port):
@@ -58,10 +64,11 @@ def is_open(ip, port):
 
 
 def main():
-    ip_addr = input("Enter Target IP: "+Fore.WHITE)
+    ip_addr = input("Enter Target IP: " + Fore.WHITE)
     print()
-    print(Fore.MAGENTA+"Which ports to scan?\n\n1. Common Ports\n2. Reserved Ports(1-1023)\n3. All Ports(1-65535)\n4. Custom Range\n")
-    m = int(input("Enter Option: "+Fore.WHITE))
+    print(
+        Fore.MAGENTA + "Which ports to scan?\n\n1. Common Ports\n2. Reserved Ports(1-1023)\n3. All Ports(1-65535)\n4. Custom Range\n")
+    m = int(input("Enter Option: " + Fore.WHITE))
     print()
     scan_ip(ip_addr, m)
 
@@ -69,5 +76,4 @@ def main():
 if __name__ == "__main__":
     main()
     print(Fore.GREEN + "\nSCAN COMPLETED.\n")
-    input(Fore.MAGENTA+"Press Enter to continue...")
-
+    input(Fore.MAGENTA + "Press Enter to continue...")
