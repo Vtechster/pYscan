@@ -6,7 +6,7 @@ pYscan - Simple Python IP Scanner
 • 4 port range modes including custom range<br>
 ## Getting Started
 ### Dependencies
-* Linux OS is recommended if any interface issues
+* Linux OS is recommended
 ### Installing
 ```
 git clone https://github.com/Vtechster/pYscan
