@@ -7,13 +7,11 @@ pYscan - Simple Python IP Scanner
 ## Getting Started
 ### Dependencies
 * Linux OS is recommended if any interface issues
-* Colorama
-* Pyfiglet
 ### Installing
 ```
 git clone https://github.com/Vtechster/pYscan
 cd pYscan
-chmod a+x main.py
+chmod a+x pyscan.py
 pip3 install -r requirements.txt
 python3 main.py
 ```
